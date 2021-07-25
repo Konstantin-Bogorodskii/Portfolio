@@ -1,19 +1,26 @@
 :root {
-  // colors
-
+  // Colors
   --color-black: #000;
   --color-white: #fff;
-  --color-eastbay: #484283;
-  --color-accent: #f14f4f;
+  --color-surf: #04c2c9;
+  --color-mirage: #1b242f;
+  --color-pink: #e31b6d;
 
-  // отступы
+  // Margins
 
-  --grid-gap: 20px;
-  --main-offset: 40px;
+  --small-offset: 10px;
+  --small-md-offset: 15px;
+  --second-offset: 20px;
+  --main-offset: 30px;
+  --big-offset: 40px;
 
-  // шрифты
+  // Fonts
 
-  --font-family: "Intro", sans-serif;
-  --middle-high: 700 30px / 140% var(--font-family);
+  --font-family: "Raleway", sans-serif;
   --small-font: 400 14px / 140% var(--font-family);
+  --middle-font: 400 16px / 140% var(--font-family);
+  --middle-high: 700 30px / 140% var(--font-family);
+
+  // Transitions
+  --ease-color: color 0.3s ease-in-out;
 }
