@@ -4,7 +4,7 @@
   right: 0;
   z-index: 100;
   width: 100%;
-  background-color: var(--color-mirage);
+  background-color: var(--color-main);
 
   &::before {
     content: "";
@@ -12,9 +12,9 @@
     left: 50%;
     bottom: 0;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: var(--color-surf);
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
 
   &__container {
@@ -28,6 +28,7 @@
   &__list {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     padding: var(--small-offset) 0;
   }
 
@@ -44,7 +45,7 @@
     transition: var(--ease-color);
 
     &:hover {
-      color: var(--color-pink);
+      color: var(--color-surf);
     }
   }
 }
