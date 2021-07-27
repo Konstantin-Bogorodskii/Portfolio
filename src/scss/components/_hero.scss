@@ -1,5 +1,9 @@
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: var(--high-offset) 0;
+  width: 100vw;
   height: 100vh;
   color: var(--color-white);
   background: var(--color-main);
@@ -8,5 +12,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: var(--main-offset);
+    font: var(--middle-high);
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: var(--second-offset);
+    font: var(--main-font);
   }
 }
