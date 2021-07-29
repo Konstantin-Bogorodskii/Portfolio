@@ -114,3 +114,14 @@ a {
     }
   }
 }
+
+.burger {
+  --burger-width: 40px;
+  --burger-height: 20px;
+  --burger-line-height: 2px;
+
+  @include burger;
+
+  display: none;
+  float: right;
+}

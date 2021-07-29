@@ -27,6 +27,10 @@
   }
 }
 
+.fancy {
+  z-index: 20;
+}
+
 .fancy span {
   display: inline-block;
   opacity: 0;
@@ -35,9 +39,6 @@
 }
 
 .fancy > .fancy--active {
-  display: inline;
-
-  // color: var(--color-surf);
   opacity: 1;
   transform: translateY(0);
 }

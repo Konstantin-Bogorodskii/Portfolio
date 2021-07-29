@@ -19,8 +19,11 @@
 
   &__container {
     position: relative;
+    display: flex;
     align-items: center;
+    justify-content: flex-end;
     padding: var(--small-offset) var(--small-md-offset);
+    min-height: var(--high-offset);
   }
 }
 
