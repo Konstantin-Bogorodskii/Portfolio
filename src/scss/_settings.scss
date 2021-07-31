@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  // overflow-x: hidden;
   margin: 0;
   font-family: var(--font-family), sans-serif;
   background-color: var(--color-white);
@@ -81,42 +82,42 @@ a {
   outline: none;
 }
 
-.btn {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid var(--color-surf);
-  border-radius: 4px;
-  padding: 15px 45px;
-  font: var(--middle-font-bd);
-  color: var(--color-surf);
-  cursor: pointer;
+// .btn {
+//   // position: fixed;
+//   overflow: hidden;
+//   border: 1px solid var(--color-surf);
+//   border-radius: 4px;
+//   padding: 15px 45px;
+//   font: var(--middle-font-bd);
+//   color: var(--color-surf);
+//   cursor: pointer;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: var(--color-surf-hover);
-    opacity: 0.3;
-    transition: transform 400ms ease-in;
-  }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     background: var(--color-surf-hover);
+//     opacity: 0.3;
+//     transition: transform 400ms ease-in;
+//   }
 
-  &--primary {
-    &::after {
-      transform: scale(0, 1);
-      transform-origin: left;
-    }
+//   &--primary {
+//     &::after {
+//       transform: scale(0, 1);
+//       transform-origin: left;
+//     }
 
-    &:hover::after {
-      transform: scale(1);
-    }
-  }
-}
+//     &:hover::after {
+//       transform: scale(1);
+//     }
+//   }
+// }
 
 .burger {
-  --burger-width: 40px;
+  --burger-width: 30px;
   --burger-height: 20px;
   --burger-line-height: 2px;
 
@@ -124,4 +125,8 @@ a {
 
   display: none;
   float: right;
+
+  @include small-tablet {
+    display: block;
+  }
 }

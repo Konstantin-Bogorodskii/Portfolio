@@ -1,5 +1,4 @@
-"use strict";
-
+// Hero
 const heroContainer = document.querySelector(".hero__container");
 
 heroContainer.addEventListener("click", (event) => {
