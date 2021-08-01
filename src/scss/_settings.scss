@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  // overflow-x: hidden;
   margin: 0;
   font-family: var(--font-family), sans-serif;
   background-color: var(--color-white);
@@ -82,39 +81,28 @@ a {
   outline: none;
 }
 
-// .btn {
-//   // position: fixed;
-//   overflow: hidden;
-//   border: 1px solid var(--color-surf);
-//   border-radius: 4px;
-//   padding: 15px 45px;
-//   font: var(--middle-font-bd);
-//   color: var(--color-surf);
-//   cursor: pointer;
+.btn {
+  overflow: hidden;
+  border: 1px solid var(--color-surf);
+  border-radius: 4px;
+  padding: 15px 45px;
+  font: var(--middle-font-bd);
+  color: var(--color-surf);
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//     top: 0;
-//     bottom: 0;
-//     background: var(--color-surf-hover);
-//     opacity: 0.3;
-//     transition: transform 400ms ease-in;
-//   }
-
-//   &--primary {
-//     &::after {
-//       transform: scale(0, 1);
-//       transform-origin: left;
-//     }
-
-//     &:hover::after {
-//       transform: scale(1);
-//     }
-//   }
-// }
+  &--primary {
+    &:hover {
+      box-shadow: 0 0 5px var(--color-surf), 0 0 10px var(--color-surf-hover);
+      color: var(--color-white);
+      background: linear-gradient(
+        117deg,
+        rgba(8, 253, 216, 1) 0%,
+        rgb(0, 199, 169) 100%
+      );
+    }
+  }
+}
 
 .burger {
   --burger-width: 30px;
@@ -124,9 +112,12 @@ a {
   @include burger;
 
   display: none;
-  float: right;
 
   @include small-tablet {
+    position: absolute;
+    right: var(--second-offset);
+    top: var(--second-offset);
+    z-index: 999;
     display: block;
   }
 }
