@@ -28,6 +28,13 @@ a {
   padding: 0;
 }
 
+.title {
+  font: var(--middle-high);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-surf);
+}
+
 .is-outer {
   position: relative !important; // stylelint-disable-line declaration-no-important
   left: -9999px !important; // stylelint-disable-line declaration-no-important
@@ -64,13 +71,6 @@ a {
   border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
 }
 
-.btn-reset {
-  border: none;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -81,6 +81,13 @@ a {
   outline: none;
 }
 
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 .btn {
   overflow: hidden;
   border: 1px solid var(--color-surf);
@@ -89,7 +96,6 @@ a {
   font: var(--middle-font-bd);
   color: var(--color-surf);
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  cursor: pointer;
 
   &--primary {
     &:hover {
