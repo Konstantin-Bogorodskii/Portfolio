@@ -9,27 +9,14 @@
     padding-bottom: var(--small-offset);
 
     &::before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: 0;
       width: 21rem;
-      height: 0.3rem;
-      background-color: var(--color-main);
-      transform: translateX(-50%);
     }
 
     &::after {
       content: "who i am";
-      position: absolute;
       left: 50%;
       bottom: -1.3rem;
-      padding: 0.2rem;
-      font: var(--pre-main-font);
-      text-transform: lowercase;
-      color: var(--color-pink);
       background-color: var(--color-bg);
-      transform: translateX(-50%);
     }
   }
 
@@ -72,7 +59,7 @@
   &__text {
     margin: 0;
     font: var(--pre-main-font);
-    color: var(--color-main);
+    color: var(--color-grey);
 
     &:not(:last-child) {
       margin-bottom: var(--small-md-offset);

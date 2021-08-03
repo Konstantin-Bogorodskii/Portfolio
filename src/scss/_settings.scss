@@ -35,6 +35,27 @@ a {
   text-transform: uppercase;
   color: var(--color-surf);
   user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 0.3rem;
+    background-color: var(--color-grey);
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    bottom: -1.3rem;
+    padding: 0.2rem;
+    font: var(--pre-main-font);
+    text-transform: lowercase;
+    color: var(--color-pink);
+    transform: translateX(-50%);
+  }
 }
 
 .is-outer {
