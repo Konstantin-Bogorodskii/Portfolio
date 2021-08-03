@@ -13,8 +13,8 @@
       position: absolute;
       left: 50%;
       bottom: 0;
-      width: 210px;
-      height: 3px;
+      width: 21rem;
+      height: 0.3rem;
       background-color: var(--color-main);
       transform: translateX(-50%);
     }
@@ -23,8 +23,8 @@
       content: "who i am";
       position: absolute;
       left: 50%;
-      bottom: -13px;
-      padding: 2px;
+      bottom: -1.3rem;
+      padding: 0.2rem;
       font: var(--pre-main-font);
       text-transform: lowercase;
       color: var(--color-pink);
@@ -41,15 +41,26 @@
   }
 
   &__left {
+    width: 400px;
     height: 400px;
-    max-width: 450px;
 
     img {
       display: block;
-      border-radius: 6px;
+      border-radius: 0.6rem;
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    @include md-tablet {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto var(--main-offset);
+    }
+
+    @include mobile {
+      width: 300px;
+      height: 300px;
     }
   }
 }
@@ -66,31 +77,22 @@
     &:not(:last-child) {
       margin-bottom: var(--small-md-offset);
     }
+
+    @include mobile {
+      font: var(--middle-font);
+    }
   }
 
   &__btn {
-    position: relative;
-    z-index: 2;
     display: inline-block;
+    overflow: hidden;
     margin-top: var(--second-offset);
+    border: 2px solid var(--color-surf);
+    transition: color 0.5s;
+  }
 
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   width: 0;
-    //   height: 100%;
-    //   // background: #0e0e16;
-    //   top: 0;
-    //   left: 0;
-    //   z-index: -1;
-    // }
-
-    // &:hover {
-    //   color: whitesmoke;
-
-    //   &:after {
-    //     width: 100%;
-    //   }
-    // }
+  @include md-tablet {
+    width: 100%;
+    max-width: 100%;
   }
 }

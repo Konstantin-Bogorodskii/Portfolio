@@ -4,8 +4,8 @@
   }
 }
 
-@mixin tablet {
-  @media (max-width: (1024px)) {
+@mixin md-tablet {
+  @media (max-width: (930px)) {
     @content;
   }
 }
