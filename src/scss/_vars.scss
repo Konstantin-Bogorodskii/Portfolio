@@ -8,23 +8,25 @@
   --color-pink: #e31b6d;
   --color-bg: #f3f6f6;
 
+  // hsl(227, 10%, 10%)
   // Margins
 
-  --small-offset: 10px;
-  --small-md-offset: 15px;
-  --second-offset: 20px;
-  --main-offset: 30px;
-  --big-offset: 40px;
-  --high-offset: 60px;
+  --small-offset: 1rem;
+  --small-md-offset: 1.5rem;
+  --second-offset: 2rem;
+  --main-offset: 3rem;
+  --big-offset: 4rem;
+  --high-offset: 6rem;
 
   // Fonts
 
   --font-family: "Raleway", sans-serif;
-  --middle-font: 400 16px / 140% var(--font-family);
-  --pre-main-font: 500 20px / 140% var(--font-family);
-  --main-font: 500 24px / 140% var(--font-family);
-  --middle--pre-high: 700 30px / 140% var(--font-family);
-  --middle-high: 700 40px / 140% var(--font-family);
+  --small-font: 400 1.4rem / 140% var(--font-family);
+  --middle-font: 400 1.6rem / 140% var(--font-family);
+  --pre-main-font: 500 2rem / 140% var(--font-family);
+  --main-font: 500 2.4rem / 140% var(--font-family);
+  --middle--pre-high: 700 3rem / 140% var(--font-family);
+  --middle-high: 700 4rem / 140% var(--font-family);
 
   // Transitions
   --ease-color: color 0.3s ease-in-out;
