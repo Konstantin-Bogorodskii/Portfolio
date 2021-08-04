@@ -1,0 +1,60 @@
+.contact {
+  padding: var(--high-offset) 0;
+  color: var(--color-white);
+  background-color: var(--color-main);
+
+  &__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: var(--high-offset);
+    padding-bottom: var(--small-offset);
+
+    &::before {
+      width: 25.5rem;
+      background-color: var(--color-white);
+    }
+
+    &::after {
+      content: "get in touch";
+      left: 50%;
+      bottom: -1.3rem;
+      background-color: var(--color-main);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    margin-right: var(--main-offset);
+    width: calc(50% - var(--main-offset));
+  }
+
+  &__span {
+    display: block;
+    margin-bottom: var(--small-font);
+    font: var(--pre-main-font);
+  }
+
+  &__text {
+    margin-bottom: var(--small-md-offset);
+    font: var(--middle-font);
+    text-align: justify;
+  }
+
+  &-icons__img {
+    width: 60px;
+    height: 60px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
