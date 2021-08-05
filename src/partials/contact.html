@@ -13,7 +13,7 @@
         <div class="contact-icons">
           <div class="contact-icons__row">
             <div class="contact-icons__img">
-              <img src="../img/place.svg" alt="d" />
+              <img src="../img/contact-user.svg" alt="My Personal Info" />
             </div>
             <div class="info">
               <div class="info__head">Name:</div>
@@ -23,7 +23,7 @@
           <!-- /. contact-icons__row -->
           <div class="contact-icons__row">
             <div class="contact-icons__img">
-              <img src="#" alt="d" />
+              <img src="../img/contact-map.svg" alt="My Location" />
             </div>
             <div class="info">
               <div class="info__head">Address:</div>
@@ -33,13 +33,29 @@
           <!-- /. contact-icons__row -->
           <div class="contact-icons__row">
             <div class="contact-icons__img">
-              <img src="#" alt="d" />
+              <img src="../img/contact-envelope.svg" alt="My Email Address" />
             </div>
             <div class="info">
               <div class="info__head">Email:</div>
               <div class="info__subtitle">
-                <a href="mailto:bogorodsky.konstantin@gmail.com"
+                <a
+                  class="info__subtitle-link"
+                  href="mailto:bogorodsky.konstantin@gmail.com"
                   >bogorodsky.konstantin@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- /. contact-icons__row -->
+          <div class="contact-icons__row">
+            <div class="contact-icons__img">
+              <img src="../img/contact-phone.svg" alt=" My Phone-number" />
+            </div>
+            <div class="info">
+              <div class="info__head">Phone:</div>
+              <div class="info__subtitle">
+                <a class="info__subtitle-link" href="tel:+79152134455"
+                  >+7(915)-213-44-55</a
                 >
               </div>
             </div>
@@ -49,7 +65,51 @@
         <!-- /.contact-icons -->
       </div>
       <!-- /.contact__left -->
-      <div class="contact__right"></div>
+      <div class="contact__right">
+        <span class="contact__span">Message me</span>
+        <form action="send.php" method="POST" class="contact__form">
+          <div class="contact__input-group">
+            <input
+              type="text"
+              class="contact__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+            />
+            <div class="contact__error"></div>
+          </div>
+          <div class="contact__input-group">
+            <input
+              type="tel"
+              class="contact__input"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+            />
+            <div class="contact__error"></div>
+          </div>
+          <div class="contact__input-group">
+            <input
+              type="email"
+              class="contact__input"
+              placeholder="Email Adress*"
+              name="email"
+              required
+            />
+            <div class="contact__error"></div>
+          </div>
+          <textarea
+            class="contact__textarea"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <div class="contact__error"></div>
+          <button class="btn btn-reset btn--secondary" type="submit">
+            Send
+          </button>
+        </form>
+        <!-- /.form -->
+      </div>
       <!-- /.contact__right -->
     </div>
   </div>

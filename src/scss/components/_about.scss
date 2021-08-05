@@ -59,6 +59,7 @@
   &__text {
     margin: 0;
     font: var(--pre-main-font);
+    font-weight: 400;
     color: var(--color-grey);
 
     &:not(:last-child) {

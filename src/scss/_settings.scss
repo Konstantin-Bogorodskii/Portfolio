@@ -113,14 +113,14 @@ a {
 
 .btn {
   overflow: hidden;
-  border: 1px solid var(--color-surf);
   border-radius: 0.4rem;
   padding: 1.5rem 4.5rem;
   font: var(--middle-font);
-  color: var(--color-surf);
-  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &--primary {
+    border: 1px solid var(--color-surf);
+    color: var(--color-surf);
     &:hover {
       box-shadow: 0 0 5px var(--color-surf), 0 0 10px var(--color-surf-hover);
       color: var(--color-white);
@@ -129,6 +129,22 @@ a {
         rgba(8, 253, 216, 1) 0%,
         rgb(0, 199, 169) 100%
       );
+    }
+  }
+
+  &--secondary {
+    position: relative;
+    border: 1px solid var(--color-pink);
+    color: var(--color-pink);
+
+    &:active {
+      top: 2px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 5px var(--color-pink), 0 0 10px var(--color-pink);
+      color: var(--color-white);
+      background: linear-gradient(117deg, var(--color-pink) 0%, #c90557 100%);
     }
   }
 }
