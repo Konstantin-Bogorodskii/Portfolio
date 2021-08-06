@@ -3,6 +3,10 @@
   color: var(--color-white);
   background-color: var(--color-main);
 
+  &__socials {
+    margin-top: var(--main-offset);
+  }
+
   &__title {
     position: relative;
     margin: 0;
@@ -70,56 +74,6 @@
       object-fit: cover;
     }
   }
-
-  &__form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0 var(--second-offset) var(--second-offset) 0;
-    max-width: 46rem;
-
-    @include md-tablet {
-      padding: 0;
-    }
-  }
-
-  &__input {
-    outline: none;
-    border: none;
-    border-radius: 0.4rem;
-    padding: 0 var(--second-offset);
-    width: 100%;
-    height: var(--big-offset);
-    font: var(--small-font);
-
-    &-group {
-      flex-basis: 100%;
-      margin-bottom: var(--small-offset);
-    }
-  }
-
-  &__textarea {
-    flex-basis: 100%;
-    margin-bottom: var(--second-offset);
-    outline: none;
-    border: none;
-    border-radius: 0.4rem;
-    padding: var(--small-md-offset) var(--second-offset);
-    min-height: 12rem;
-    font: var(--small-font);
-    background-color: var(--color-white);
-    resize: none;
-  }
-
-  // &__error {
-  //   font-size: 12px;
-  //   min-height: 5px;
-  //   color: $primary;
-  //   text-decoration: underline;
-  //   margin-top: 7px;
-  //   margin-bottom: 7px;
-  // }
 }
 
 .contact-icons {

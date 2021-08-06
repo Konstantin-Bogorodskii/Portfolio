@@ -1,0 +1,35 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: var(--second-offset);
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 45px;
+    height: 45px;
+
+    svg {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: var(--color-pink);
+      object-fit: cover;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        fill: var(--color-surf);
+      }
+
+      &:active {
+        top: 3px;
+      }
+    }
+  }
+}

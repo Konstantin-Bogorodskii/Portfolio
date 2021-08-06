@@ -68,30 +68,30 @@
       <div class="contact__right">
         <span class="contact__span">Message me</span>
         <form action="send.php" method="POST" class="contact__form">
-          <div class="contact__input-group">
+          <div class="contact__input-group contact--name">
             <input
               type="text"
-              class="contact__input"
+              class="contact__input contact__input--name"
               placeholder="Your Full Name*"
               name="name"
               required
             />
             <div class="contact__error"></div>
           </div>
-          <div class="contact__input-group">
+          <div class="contact__input-group contact--tel">
             <input
               type="tel"
-              class="contact__input"
+              class="contact__input contact__input--phone"
               placeholder="Phone Number*"
               name="phone"
               required
             />
             <div class="contact__error"></div>
           </div>
-          <div class="contact__input-group">
+          <div class="contact__input-group contact--email">
             <input
               type="email"
-              class="contact__input"
+              class="contact__input contact__input--email"
               placeholder="Email Adress*"
               name="email"
               required
@@ -100,7 +100,7 @@
           </div>
           <textarea
             class="contact__textarea"
-            placeholder="Message"
+            placeholder="Message..."
             name="message"
           ></textarea>
           <div class="contact__error"></div>
@@ -111,6 +111,32 @@
         <!-- /.form -->
       </div>
       <!-- /.contact__right -->
+    </div>
+    <div class="socials contact__socials">
+      <div class="socials__item">
+        <a href="#" class="socials__link" target="_blank"><svg>
+          <use xlink:href="img/sprite.svg#github"></use>
+        </svg></a>
+          
+        </a>
+      </div>
+      <!-- /.socials__item -->
+      <div class="socials__item">
+        <a href="#" class="socials__link" target="_blank"><svg>
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg></a>
+          
+        </a>
+      </div>
+      <!-- /.socials__item -->
+      <div class="socials__item">
+        <a href="#" class="socials__link" target="_blank"><svg>
+          <use xlink:href="img/sprite.svg#linkedin"></use>
+        </svg></a>
+          
+        </a>
+      </div>
+      <!-- /.socials__item -->
     </div>
   </div>
 </section>
