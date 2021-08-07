@@ -11,7 +11,9 @@
       padding: 0;
     }
   }
+}
 
+.form {
   &__input {
     outline: none;
     border: none;
@@ -20,6 +22,15 @@
     width: 100%;
     height: var(--big-offset);
     font: var(--small-font);
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+      box-shadow: 0 0 10px var(--color-bg);
+    }
+
+    &--error {
+      box-shadow: 0 0 10px var(--color-pink);
+    }
   }
 
   &__textarea {
@@ -32,41 +43,45 @@
     min-height: 12rem;
     font: var(--small-font);
     background-color: var(--color-white);
+    transition: all 0.2s ease-in-out;
     resize: none;
+
+    &:focus {
+      box-shadow: 0 0 5px var(--color-bg);
+    }
   }
 
-  // &__error {
-  //   font-size: 12px;
-  //   min-height: 5px;
-  //   color: $primary;
-  //   text-decoration: underline;
-  //   margin-top: 7px;
-  //   margin-bottom: 7px;
-  // }
+  &__item {
+    flex-basis: 100%;
+    margin-bottom: var(--small-offset);
+  }
+
+  &__error {
+    margin: 0 7px;
+    min-height: 5px;
+    font-size: 12px;
+    text-decoration: underline;
+    color: #da1c1c;
+  }
 }
 
-.contact__input-group {
-  flex-basis: 100%;
-  margin-bottom: var(--small-offset);
-
-  &.shake {
-    animation: shake 0.3s ease-in-out infinite;
-  }
+.shake {
+  animation: shake 0.3s ease-in-out;
 }
 
 @keyframes shake {
   0%,
   100% {
-    margin-left: 0;
+    margin-right: 0;
   }
 
-  20%,
+  30%,
   80% {
-    margin-left: -1.2rem;
+    margin-right: -1.2rem;
   }
 
   40%,
   60% {
-    margin-left: 1.2rem;
+    margin-right: 1.2rem;
   }
 }

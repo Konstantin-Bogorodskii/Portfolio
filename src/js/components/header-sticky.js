@@ -3,7 +3,6 @@
 // Header-Sticky
 const header = document.querySelector(".header");
 const sticky = header.offsetTop;
-console.log(sticky);
 
 window.onscroll = function () {
   myFunction();

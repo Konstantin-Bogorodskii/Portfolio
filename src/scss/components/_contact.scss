@@ -74,6 +74,12 @@
       object-fit: cover;
     }
   }
+
+  &__info {
+    @include mobile {
+      align-items: flex-start;
+    }
+  }
 }
 
 .contact-icons {
@@ -105,9 +111,5 @@
     &-link {
       color: inherit;
     }
-  }
-
-  @include mobile {
-    align-items: flex-start;
   }
 }
