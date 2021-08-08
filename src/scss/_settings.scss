@@ -116,13 +116,14 @@ a {
   border-radius: 0.4rem;
   padding: 1.5rem 4.5rem;
   font: var(--middle-font);
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background 0.3s linear,
+    box-shadow 500ms linear;
 
   &--primary {
     border: 1px solid var(--color-surf);
     color: var(--color-surf);
     &:hover {
-      box-shadow: 0 0 5px var(--color-surf), 0 0 10px var(--color-surf-hover);
+      box-shadow: 0 0 5px var(--color-surf), 0 0 12px var(--color-surf-hover);
       color: var(--color-white);
       background: linear-gradient(
         117deg,
