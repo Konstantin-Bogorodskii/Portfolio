@@ -5,9 +5,8 @@ heroContainer.addEventListener("click", (event) => {
   const target = event.target;
   const strText = target.textContent;
   const strSplit = strText.split("");
-
   let char = 0;
-  let timer = setInterval(onTick, 50);
+  let timer = setInterval(onTick, 70);
   let isComplete = false;
 
   function complete() {
@@ -19,7 +18,8 @@ heroContainer.addEventListener("click", (event) => {
     if (
       target.classList.contains("container") ||
       target.classList.contains("btn") ||
-      target.innerHTML == strText
+      target.innerHTML == strText ||
+      target.innerHTML == "&nbsp;"
     )
       return;
 
@@ -29,7 +29,7 @@ heroContainer.addEventListener("click", (event) => {
     if (char === strSplit.length) {
       complete();
       target.innerHTML = strText;
-      return target;
+      return target.innerHTML;
     }
   }
 

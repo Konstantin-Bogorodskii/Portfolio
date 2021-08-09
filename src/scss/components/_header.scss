@@ -53,6 +53,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      padding: 20%;
       width: 100%;
       height: 100vh;
       background: var(--color-main);
@@ -135,4 +136,13 @@
 .header__sticky .nav__link:hover,
 .header__sticky .nav__link:focus {
   color: var(--color-white);
+}
+
+.header__sticky .nav__list--active .nav__link:hover,
+.header__sticky .nav__list--active .nav__link:focus {
+  color: var(--color-surf);
+}
+
+.header__sticky .nav__list--active .nav__link::after {
+  background-color: var(--color-surf);
 }

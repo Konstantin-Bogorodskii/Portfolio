@@ -13,8 +13,19 @@ form.addEventListener("submit", formSend);
 function formSend(e) {
   e.preventDefault();
   let error = formValidate(form);
+  let formData = new FormData(form);
 
   if (error === 0) {
+    form.classList.add("form__sending");
+    let response = await fetch("mail.php", {
+      method: "POST",
+      body: formData,
+    });
+    if (response.ok) {
+      let result = await response.json();
+      console.log(result.message);
+      form.reset();
+    }
   } else {
     console.log("errors");
   }
@@ -27,6 +38,7 @@ function formValidate(form) {
   for (let i = 0; i < formReq.length; i++) {
     const input = formReq[i];
     formRemoveError(input);
+    inputOnChange(input);
 
     if (input.classList.contains("form__input-email")) {
       if (!emailTest(input)) {
@@ -69,4 +81,10 @@ function phoneTest(input) {
   return /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(
     input.value
   );
+}
+
+function inputOnChange(input) {
+  input.addEventListener("input", () => {
+    formRemoveError(input);
+  });
 }

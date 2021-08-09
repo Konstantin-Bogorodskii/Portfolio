@@ -24,8 +24,17 @@
     font: var(--small-font);
     transition: all 0.2s ease-in-out;
 
+    &__sending {
+    }
+
     &:focus {
-      box-shadow: 0 0 10px var(--color-bg);
+      box-shadow: 0 0 7px var(--color-bg);
+    }
+
+    &[placeholder] {
+      font: var(--roboto-main);
+      font-size: 1.4rem;
+      color: var(--color-grey);
     }
 
     &--error {

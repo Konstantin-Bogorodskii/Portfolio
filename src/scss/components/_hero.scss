@@ -9,6 +9,7 @@
   background: var(--color-main);
 
   &__container {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,12 +20,22 @@
     margin: 0;
     margin-bottom: var(--main-offset);
     font: var(--middle-high);
+    user-select: none;
+
+    @include small-tablet {
+      pointer-events: none;
+    }
   }
 
   &__text {
     margin: 0;
     margin-bottom: var(--second-offset);
     font: var(--main-font);
+    user-select: none;
+
+    @include small-tablet {
+      pointer-events: none;
+    }
   }
 }
 
