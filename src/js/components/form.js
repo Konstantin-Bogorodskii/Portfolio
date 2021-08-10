@@ -4,6 +4,7 @@
 
 const formBtn = document.querySelector(".form__btn");
 const form = document.querySelector(".form");
+const contactForm = document.querySelector(".contact__form");
 const nInput = form.querySelector(".form__input-name");
 const tInput = form.querySelector(".form__input-tel");
 const eInput = form.querySelector(".form__input-email");
@@ -16,16 +17,16 @@ function formSend(e) {
   let formData = new FormData(form);
 
   if (error === 0) {
-    form.classList.add("form__sending");
-    let response = await fetch("mail.php", {
-      method: "POST",
-      body: formData,
-    });
-    if (response.ok) {
-      let result = await response.json();
-      console.log(result.message);
-      form.reset();
-    }
+    contactForm.classList.add("contact__sending");
+    // let response = await fetch("../resources/mail.php", {
+    //   method: "POST",
+    //   body: formData,
+    // });
+    // if (response.ok) {
+    //   let result = await response.json();
+    //   console.log(result.message);
+    //   form.reset();
+    // }
   } else {
     console.log("errors");
   }

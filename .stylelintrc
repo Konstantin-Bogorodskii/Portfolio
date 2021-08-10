@@ -550,7 +550,6 @@
 		"declaration-block-semicolon-space-before": "never",
 		"declaration-block-single-line-max-declarations": 0,
 		"declaration-block-trailing-semicolon": "always",
-		"declaration-colon-newline-after": "always-multi-line",
 		"declaration-colon-space-after": "always-single-line",
 		"declaration-colon-space-before": "never",
 		"declaration-empty-line-before": [
