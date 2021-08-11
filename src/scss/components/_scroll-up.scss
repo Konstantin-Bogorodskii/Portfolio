@@ -1,0 +1,32 @@
+.scroll-up {
+  position: fixed;
+  right: var(--main-offset);
+  bottom: var(--small-md-offset);
+  z-index: 30000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-surf);
+  border-radius: 0.7rem;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  pointer-events: none;
+
+  svg {
+    width: 70%;
+    height: 70%;
+    fill: var(--color-surf);
+    object-fit: cover;
+    transform: rotate(180deg) translateY(-20%);
+  }
+
+  &__show {
+    bottom: var(--main-offset);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

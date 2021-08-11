@@ -34,8 +34,11 @@
   padding: var(--second-offset);
   width: calc(33% - var(--second-offset));
   text-align: center;
-  background-color: rgb(97, 218, 251);
+  background-color: var(--color-main);
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.8),
+    1px 1px 5px rgba(255, 255, 255, 1);
   transition: all 0.3s ease-in-out;
+  // rgb(97, 218, 251)
 
   &:not(:nth-last-child(3n)) {
     margin-bottom: var(--second-offset);
@@ -103,7 +106,7 @@
 }
 
 .ability:hover {
-  border: 1px solid var(--color-surf);
-  box-shadow: 2px 2px 10px var(--color-surf-hover);
-  background-color: var(--color-main);
+  border: 2px solid var(--color-surf);
+  box-shadow: inset 2px 2px 5px rgba(8, 253, 216, 0.8),
+    1px 1px 5px rgba(8, 253, 216, 1);
 }
