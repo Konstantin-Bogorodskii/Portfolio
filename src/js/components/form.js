@@ -17,14 +17,13 @@ function formSend(e) {
   let formData = new FormData(form);
 
   if (error === 0) {
-    contactForm.classList.add("contact__sending");
+    // contactForm.classList.add("contact__sending");
     // let response = await fetch("../resources/mail.php", {
     //   method: "POST",
     //   body: formData,
     // });
     // if (response.ok) {
     //   let result = await response.json();
-    //   console.log(result.message);
     //   form.reset();
     // }
   } else {

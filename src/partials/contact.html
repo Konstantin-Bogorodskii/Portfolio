@@ -5,10 +5,10 @@
       <div class="contact__left">
         <span class="contact__span">Get In Touch</span>
         <p class="contact__text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-          beatae officia maxime fugiat, et pariatur modi dolorem obcaecati
-          impedit sed eveniet quidem saepe quia provident libero repellendus
-          adipisci odio molestias.
+          If&nbsp;you&rsquo;d like to&nbsp;send me&nbsp;a&nbsp;message,
+          I&nbsp;can be&nbsp;reached through various ways! If&nbsp;you prefer
+          email, simply fill out the form or&nbsp;send me&nbsp;a message and
+          I&rsquo;ll get back within 1-2&nbsp;days.
         </p>
         <div class="contact-icons">
           <div class="contact-icons__row">
@@ -67,7 +67,12 @@
       <!-- /.contact__left -->
       <div class="contact__right">
         <span class="contact__span">Message me</span>
-        <form class="form contact__form" id="form">
+        <form
+          class="form contact__form"
+          id="form"
+          action="../resources/mail.php"
+          method="POST"
+        >
           <div class="form__item">
             <input
               type="text"
@@ -95,7 +100,7 @@
           <textarea
             class="form__textarea"
             placeholder="Message..."
-            name="subject"
+            name="message"
           ></textarea>
           <button class="btn btn-reset btn--secondary form__btn" type="submit">
             Send

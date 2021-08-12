@@ -30,7 +30,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 3px 3px 15px #08fdd8;
   }
 }
 
@@ -109,8 +108,12 @@
   }
 
   &__active {
-    color: var(--color-pink);
+    color: var(--color-surf);
   }
+}
+
+.header__sticky .nav__active {
+  color: var(--color-pink);
 }
 
 .nav__list--active .nav__link {
@@ -134,12 +137,12 @@
 }
 
 .header__sticky .nav__link::after {
-  background-color: var(--color-white);
+  background-color: var(--color-pink);
 }
 
 .header__sticky .nav__link:hover,
 .header__sticky .nav__link:focus {
-  color: var(--color-white);
+  color: var(--color-pink);
 }
 
 .header__sticky .nav__list--active .nav__link:hover,
