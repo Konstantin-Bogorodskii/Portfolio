@@ -1,5 +1,142 @@
 .projects {
   padding: var(--high-offset) 0;
-  height: 400px;
   background-color: var(--color-bg);
+
+  &__title {
+    margin-bottom: var(--main-offset);
+  }
+}
+
+.figcaption {
+  &__img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.gallery__img {
+  width: 250px;
+  height: 250px;
+}
+
+.filter {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--second-offset);
+  }
+
+  &__item {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    font: var(--roboto-main);
+    line-height: 120%;
+    color: var(--color-main);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: var(--second-offset);
+    }
+
+    &.filter__current {
+      border-bottom: 2px solid currentColor;
+      color: var(--color-pink);
+    }
+  }
+}
+
+.gallery {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--second-offset);
+  }
+
+  &__btns {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    visibility: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--color-grey);
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+      fill: var(--color-white);
+      object-fit: cover;
+    }
+
+    &:hover {
+      background-color: #656566;
+
+      svg {
+        fill: var(--color-pink);
+      }
+    }
+
+    &:first-child {
+      margin-right: var(--main-offset);
+    }
+  }
+
+  &__item {
+    grid-column: 3 span;
+    overflow: hidden;
+    border-radius: 0.4rem;
+  }
+
+  &__image {
+    position: relative;
+    margin-bottom: var(--small-offset);
+    width: 100%;
+    max-height: 25.5rem;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      .gallery__btns {
+        opacity: 1;
+        visibility: 1;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: var(--small-offset);
+    font: var(--main-font);
+    color: var(--color-main);
+  }
+
+  &__span {
+    margin: 0;
+    font: var(--small-font);
+    color: var(--color-main);
+  }
 }
