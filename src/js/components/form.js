@@ -11,21 +11,24 @@ const eInput = form.querySelector(".form__input-email");
 
 form.addEventListener("submit", formSend);
 
-function formSend(e) {
+async function formSend(e) {
   e.preventDefault();
   let error = formValidate(form);
   let formData = new FormData(form);
-
   if (error === 0) {
+    console.log("da");
     // contactForm.classList.add("contact__sending");
-    // let response = await fetch("../resources/mail.php", {
-    //   method: "POST",
-    //   body: formData,
-    // });
-    // if (response.ok) {
-    //   let result = await response.json();
-    //   form.reset();
-    // }
+    let response = await fetch("../resources/mail.php", {
+      method: "POST",
+      body: formData,
+    });
+    if (response.ok) {
+      let result = await response.json();
+      console.log(result);
+      form.reset();
+    } else {
+      alert("error");
+    }
   } else {
     console.log("errors");
   }
