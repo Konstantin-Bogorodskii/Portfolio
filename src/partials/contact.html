@@ -67,19 +67,28 @@
       <!-- /.contact__left -->
       <div class="contact__right">
         <span class="contact__span">Message me</span>
-        <form
-          class="form contact__form"
-          id="form"
-          action="../resources/mail.php"
-          method="POST"
-        >
+        <form class="form contact__form" id="form" action="#" method="POST">
+          <input
+            type="hidden"
+            name="admin_email[]"
+            value="bloodyrogue1906@gmail.com"
+          />
+          <input
+            type="hidden"
+            name="form_subject"
+            value="Новое предложение по работе!"
+          />
           <div class="form__item">
-            <input
-              type="text"
-              class="form__input form__input-name form__input--req"
-              placeholder="Your Full Name ∗"
-              name="name"
-            />
+            <label for="name">
+              <input
+                type="text"
+                class="form__input form__input-name form__input--req"
+                placeholder="Your Full Name ∗"
+                name="name"
+                id="name"
+                data-validate-field="name"
+              />
+            </label>
           </div>
           <div class="form__item">
             <input
@@ -88,6 +97,7 @@
               placeholder="Phone Number ∗"
               name="phone"
               id="phone-input"
+              data-validate-field="tel"
             />
           </div>
           <div class="form__item">
@@ -96,6 +106,7 @@
               class="form__input form__input-email form__input--req"
               placeholder="Email Adress ∗"
               name="email"
+              data-validate-field="email"
             />
           </div>
           <textarea
