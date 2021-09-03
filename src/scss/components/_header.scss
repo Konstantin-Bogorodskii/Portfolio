@@ -163,6 +163,10 @@
   color: var(--color-pink);
 }
 
+.nav__active.nav__link::after {
+  width: 0;
+}
+
 .header__sticky .nav__list--active .nav__link:hover,
 .header__sticky .nav__list--active .nav__link:focus {
   color: var(--color-surf);
@@ -170,4 +174,8 @@
 
 .header__sticky .nav__list--active .nav__link::after {
   background-color: var(--color-surf);
+}
+
+.nav__list--active .nav__active.nav__link {
+  color: var(--color-surf);
 }
