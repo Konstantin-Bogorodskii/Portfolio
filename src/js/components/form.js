@@ -15,12 +15,14 @@ function formSend(e) {
           Swal.fire({
             position: "center",
             icon: "success",
-            title: "Your application has been successfully sent.",
+            title: "Your offer has been successfully sent!",
             showConfirmButton: false,
-            timer: 1000,
-            width: "45",
-            height: "45",
-            padding: "2rem",
+            timer: 1750,
+            width: 400,
+            padding: "3.5rem",
+            iconColor: "#08fdd8",
+            background: "#17181c",
+            backdrop: "rgba(41, 41, 41, 0.7)",
           });
         }
       }
@@ -34,10 +36,14 @@ function formSend(e) {
     Swal.fire({
       position: "center",
       icon: "error",
-      title: "Oops...",
-      text: "Something went wrong!",
+      title: "Oops... Something went wrong!",
       showConfirmButton: false,
-      timer: 1000,
+      timer: 1750,
+      width: 400,
+      padding: "3.5rem",
+      iconColor: "#e31b6d",
+      background: "#17181c",
+      backdrop: "rgba(41, 41, 41, 0.7)",
     });
   }
 }

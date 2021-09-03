@@ -46,3 +46,12 @@ heroContainer.addEventListener("click", (event) => {
     });
   }
 });
+
+// const fancies = document.querySelectorAll('.fancy')
+// setTimeout(() => {
+//   fancies.forEach(item => {
+//     const strText = item.textContent;
+//     const strSplit = strText.split("");
+
+//   })
+// }, 1000)
