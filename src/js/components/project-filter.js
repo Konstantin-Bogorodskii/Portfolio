@@ -12,7 +12,6 @@ filterContainer.addEventListener("click", (event) => {
     const filterValue = target.getAttribute("data-filter");
     filterItems.forEach((item) => {
       if (item.classList.contains(filterValue) || filterValue === "all") {
-        console.log(item);
         item.classList.remove("filter__hide");
         item.classList.add("filter__show");
       } else {

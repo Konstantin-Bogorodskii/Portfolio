@@ -20,7 +20,15 @@
     margin: 0;
     margin-bottom: var(--main-offset);
     font: var(--middle-high);
+    opacity: 0;
+    transform: translate(0, 120%);
+    transition: all 0.7s ease-in-out;
     user-select: none;
+
+    &.anim--active {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
 
     @include small-tablet {
       pointer-events: none;
@@ -31,7 +39,16 @@
     margin: 0;
     margin-bottom: var(--second-offset);
     font: var(--main-font);
+    opacity: 0;
+    transform: translate(0, 120%);
+    transition: all 0.7s ease 0s;
     user-select: none;
+
+    &.anim--active {
+      opacity: 1;
+      transform: translate(0, 0);
+      transition: all 0.7s ease 0.4s;
+    }
 
     @include small-tablet {
       pointer-events: none;

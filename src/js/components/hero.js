@@ -3,6 +3,8 @@ const heroContainer = document.querySelector(".hero__container");
 
 heroContainer.addEventListener("click", (event) => {
   const target = event.target;
+  console.log(target.tagName);
+  if (target.querySelector("span")) return;
   const strText = target.textContent;
   const strSplit = strText.split("");
   let char = 0;
@@ -25,33 +27,43 @@ heroContainer.addEventListener("click", (event) => {
 
     const span = target.querySelectorAll("span")[char];
     span.classList.add("fancy--active");
+    setColor(span);
+
     char++;
     if (char === strSplit.length) {
       complete();
       target.innerHTML = strText;
+      isComplete = false;
       return target.innerHTML;
     }
   }
 
-  if (target.classList.contains("fancy")) {
-    if (!target.innerHTML == strText) return;
-    target.textContent = "";
+  if (!isComplete) {
+    if (target.classList.contains("fancy")) {
+      if (!target.innerHTML == strText) return;
+      target.textContent = "";
+      isComplete = true;
 
-    strSplit.forEach((item) => {
-      if (item === " ") {
-        target.innerHTML += "<span>" + "&nbsp;" + "</span>";
-      } else {
-        target.innerHTML += "<span>" + item + "</span>";
-      }
-    });
+      strSplit.forEach((item) => {
+        if (item === " ") {
+          target.innerHTML += "<span>" + "&nbsp;" + "</span>";
+        } else {
+          target.innerHTML += "<span>" + item + "</span>";
+        }
+      });
+    }
   }
 });
 
-// const fancies = document.querySelectorAll('.fancy')
-// setTimeout(() => {
-//   fancies.forEach(item => {
-//     const strText = item.textContent;
-//     const strSplit = strText.split("");
+// Random Colors
 
-//   })
-// }, 1000)
+const colors = ["#08fdd8", "#ffffff"];
+
+function setColor(item) {
+  let random = getRandomColor();
+  item.style.color = random;
+}
+
+function getRandomColor() {
+  return colors[Math.floor(Math.random() * colors.length)];
+}

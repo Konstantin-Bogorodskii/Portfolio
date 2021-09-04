@@ -30,9 +30,14 @@ for (const anchor of anchors) {
     e.preventDefault();
     e.target.classList.add("nav__active");
     const blockId = anchor.getAttribute("href");
-    document.querySelector("" + blockId).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    const yOffset = -60;
+    let y =
+      document.querySelector("" + blockId).getBoundingClientRect().top +
+      window.pageYOffset +
+      yOffset;
+
+    setTimeout(function () {
+      window.scrollTo({ left: 0, top: y, behavior: "smooth" });
+    }, 150);
   });
 }
