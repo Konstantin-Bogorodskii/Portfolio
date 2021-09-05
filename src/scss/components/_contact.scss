@@ -54,6 +54,15 @@
     margin-bottom: var(--second-offset);
     font: var(--main-font);
     color: var(--color-surf);
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.8s ease 0s;
+
+    &.anim--active {
+      opacity: 1;
+      transform: translate(0, 0);
+      transition: all 0.8s ease-in-out 0.4s;
+    }
   }
 
   &__text {
@@ -61,6 +70,15 @@
     margin-bottom: var(--small-md-offset);
     font: var(--middle-font);
     text-align: justify;
+    opacity: 0;
+    transform: translate(-120%, 0);
+    transition: all 0.8s ease 0s;
+
+    &.anim--active {
+      opacity: 1;
+      transform: translate(0, 0);
+      transition: all 0.8s ease-in-out 0.5s;
+    }
   }
 
   &-icons__img {
@@ -89,6 +107,9 @@
     display: flex;
     align-items: center;
     height: 45px;
+    opacity: 0;
+    transform: translate(-120%, 20%);
+    transition: all 0.7s ease 0s;
 
     &:not(:last-child) {
       margin-bottom: var(--second-offset);
@@ -112,4 +133,25 @@
       color: inherit;
     }
   }
+}
+
+.contact-icons.anim--active .contact-icons__row {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.contact-icons.anim--active .contact-icons__row:nth-child(1) {
+  transition: all 0.7s ease-in-out 0.7s;
+}
+
+.contact-icons.anim--active .contact-icons__row:nth-child(2) {
+  transition: all 0.7s ease-in-out 0.9s;
+}
+
+.contact-icons.anim--active .contact-icons__row:nth-child(3) {
+  transition: all 0.7s ease-in-out 1.1s;
+}
+
+.contact-icons.anim--active .contact-icons__row:nth-child(4) {
+  transition: all 0.7s ease-in-out 1.3s;
 }

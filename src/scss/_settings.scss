@@ -35,6 +35,9 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: var(--color-surf);
+  opacity: 0;
+  transform: translate(0, 120%);
+  transition: all 0.6s ease 0s;
   user-select: none;
 
   &::before {
@@ -56,6 +59,12 @@ a {
     text-transform: lowercase;
     color: var(--color-pink);
     transform: translateX(-50%);
+  }
+
+  &.anim--active {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.6s ease-in-out 0.2s;
   }
 }
 
@@ -123,6 +132,7 @@ a {
   &--primary {
     border: 1px solid var(--color-surf);
     color: var(--color-surf);
+
     &:hover {
       box-shadow: 0 0 5px var(--color-surf), 0 0 12px var(--color-surf-hover);
       color: var(--color-white);
@@ -139,14 +149,14 @@ a {
     border: 1px solid var(--color-pink);
     color: var(--color-pink);
 
-    &:active {
-      top: 2px;
-    }
-
     &:hover {
       box-shadow: 0 0 5px var(--color-pink), 0 0 10px var(--color-pink);
       color: var(--color-white);
       background: linear-gradient(117deg, var(--color-pink) 0%, #c90557 100%);
+    }
+
+    &:active {
+      top: 2px;
     }
   }
 }
