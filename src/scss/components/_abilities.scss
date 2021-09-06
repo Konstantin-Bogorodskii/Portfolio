@@ -72,6 +72,7 @@
     0 1px 1px rgba(25, 25, 25, 0.05);
   background-color: #f0f0f0;
   transform: scaleX(0);
+  transform-origin: left;
   transition: all 0.8s ease 0s;
 
   &.anim--active {
@@ -88,6 +89,7 @@
     height: 100%;
     background-color: var(--color-surf);
     transform: scaleX(0);
+    transform-origin: left;
     transition: all 0.8s ease 0s;
 
     &::before {

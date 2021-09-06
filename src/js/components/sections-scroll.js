@@ -41,3 +41,20 @@ for (const anchor of anchors) {
     }, 150);
   });
 }
+
+const heroBtnAnchor = document.querySelector(".hero__btn");
+heroBtnAnchor.addEventListener("click", (e) => {
+  e.preventDefault();
+  const btn = e.target;
+  const blockId = btn.getAttribute("href");
+  const yOffset = -60;
+
+  let y =
+    document.querySelector("" + blockId).getBoundingClientRect().top +
+    window.pageYOffset +
+    yOffset;
+
+  setTimeout(function () {
+    window.scrollTo({ left: 0, top: y, behavior: "smooth" });
+  }, 150);
+});
