@@ -1,16 +1,31 @@
 const languages = document.querySelectorAll(".nav__img");
 const documentTitle = document.querySelector("title");
 const allLanguages = ["ru", "en"];
+const docTitleLang = {
+  en: "Bogorodsky Konstantin Portfolio",
+  ru: "Богородский Константин Портфолио",
+};
 
 const langData = {
-  title: {
-    en: "Bogorodsky Konstantin Portfolio",
-    ru: "Богородский Константин Портфолио",
-  },
-
   home: {
     en: "home",
     ru: "главная",
+  },
+  about: {
+    en: "about",
+    ru: "обо мне",
+  },
+  skills: {
+    en: "skills",
+    ru: "навыки",
+  },
+  projects: {
+    en: "projects",
+    ru: "проекты",
+  },
+  contact: {
+    en: "contact",
+    ru: "контакты",
   },
 };
 
@@ -36,7 +51,11 @@ function changeLanguage() {
   if (!allLanguages.includes(hash)) {
     changeUrlLanguage("en");
   }
-  documentTitle.textContent = langData.title[hash];
+  documentTitle.textContent = docTitleLang[hash];
+
+  for (const key in langData) {
+    document.querySelector(`.lang__${key}`).textContent = langData[key][hash];
+  }
 }
 
 changeLanguage();

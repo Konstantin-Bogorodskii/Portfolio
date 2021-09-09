@@ -3,7 +3,6 @@ const heroContainer = document.querySelector(".hero__container");
 
 heroContainer.addEventListener("click", (event) => {
   const target = event.target;
-  console.log(target.tagName);
   if (target.querySelector("span")) return;
   const strText = target.textContent;
   const strSplit = strText.split("");
