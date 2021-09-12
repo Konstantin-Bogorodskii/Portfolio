@@ -1,0 +1,100 @@
+.circle {
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__skill {
+    margin: 0 var(--second-offset) var(--second-offset) 0;
+    width: 40%;
+    text-align: center;
+
+    @include mobile {
+      margin: 0;
+      margin-bottom: var(--second-offset);
+      width: 100%;
+    }
+  }
+
+  &__name {
+    margin-bottom: 1rem;
+    font: var(--pre-main-font);
+    text-align: center;
+  }
+}
+
+.circle-progress {
+  width: 18rem;
+  height: 18rem;
+}
+
+.circle-progress-value {
+  stroke: var(--color-surf);
+  stroke-linecap: round;
+  stroke-width: 6px;
+}
+
+.circle-progress-circle {
+  stroke-width: 6px;
+}
+
+.circle-progress-text {
+  font: var(--roboto-main);
+  fill: var(--color-white);
+}
+
+// .circle__progress .circle__left {
+//   animation: load1 1s linear forwards;
+// }
+
+// .circle__progress:nth-of-type(2) .circle__right,
+// .circle__progress:nth-of-type(3) .circle__right {
+//   animation: load2 0.5s linear forwards 1s;
+// }
+
+// .circle__progress:last-of-type .circle__right,
+// .circle__progress:first-of-type .circle__right {
+//   animation: load3 0.8s linear forwards 1s;
+// }
+
+// @keyframes load1 {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+
+//   100% {
+//     transform: rotate(180deg);
+//   }
+// }
+
+// @keyframes load2 {
+//   0% {
+//     z-index: 100;
+//     transform: rotate(180deg);
+//   }
+
+//   100% {
+//     z-index: 100;
+//     transform: rotate(270deg);
+//   }
+// }
+
+// @keyframes load3 {
+//   0% {
+//     z-index: 100;
+//     transform: rotate(180deg);
+//   }
+
+//   100% {
+//     z-index: 100;
+//     transform: rotate(315deg);
+//   }
+// }

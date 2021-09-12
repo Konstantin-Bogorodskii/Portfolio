@@ -22,17 +22,57 @@
     }
   }
 
+  &__hard {
+    margin-right: var(--main-offset);
+    width: 48%;
+
+    @include md-tablet {
+      margin-right: 0;
+      margin-bottom: var(--second-offset);
+      width: 85%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__soft {
+    width: 48%;
+
+    @include md-tablet {
+      margin-right: 0;
+      margin-bottom: var(--second-offset);
+      width: 85%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
   &__wrap {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
+    @include md-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__group-title {
+    margin: 0;
+    margin-bottom: var(--small-md-offset);
+    font: var(--middle--pre-high);
+    text-align: center;
   }
 }
 
 .skills {
   border-radius: 1rem;
   padding: 2.5rem 3rem;
-  width: 60rem;
   box-shadow: inset 0 0 7px #08fdd8;
   background-color: var(--color-main);
 }
@@ -56,6 +96,10 @@
       opacity: 1;
       transform: translate(0, 0);
       transition: all 0.8s ease 0.4s;
+    }
+
+    @include mobile {
+      font: var(--middle-font);
     }
   }
 

@@ -1,12 +1,20 @@
 <section class="contact" id="contact">
   <div class="container contact__container">
-    <h2 class="title anim-item anim--no-effect contact__title">contact me</h2>
+    <h2
+      class="
+        title
+        anim-item anim--no-effect
+        contact__title contact__title--lang
+      "
+    >
+      contact me
+    </h2>
     <div class="contact__content">
       <div class="contact__left anim-item anim--no-effect">
-        <span class="contact__span anim-item anim--no-effect"
+        <span class="contact__span contact__get--lang anim-item anim--no-effect"
           >Get In Touch</span
         >
-        <p class="contact__text anim-item anim--no-effect">
+        <p class="contact__text contact__text--lang anim-item anim--no-effect">
           If&nbsp;you&rsquo;d like to&nbsp;send me&nbsp;a&nbsp;message,
           I&nbsp;can be&nbsp;reached through various ways! If&nbsp;you prefer
           email, simply fill out the form or&nbsp;send me&nbsp;a&nbsp;message
@@ -18,8 +26,10 @@
               <img src="../img/contact-user.svg" alt="My Personal Info" />
             </div>
             <div class="info contact__info">
-              <div class="info__head">Name:</div>
-              <div class="info__subtitle">Konstantin Bogorodsky</div>
+              <div class="info__head info__name--lang">Name:</div>
+              <div class="info__subtitle info__fullname--lang">
+                Konstantin Bogorodsky
+              </div>
             </div>
           </div>
           <!-- /. contact-icons__row -->
@@ -28,8 +38,10 @@
               <img src="../img/contact-map.svg" alt="My Location" />
             </div>
             <div class="info contact__info">
-              <div class="info__head">Address:</div>
-              <div class="info__subtitle">Russia, Moscow</div>
+              <div class="info__head info__address--lang">Address:</div>
+              <div class="info__subtitle info__fulladdress--lang">
+                Russia, Moscow
+              </div>
             </div>
           </div>
           <!-- /. contact-icons__row -->
@@ -38,7 +50,7 @@
               <img src="../img/contact-envelope.svg" alt="My Email Address" />
             </div>
             <div class="info contact__info">
-              <div class="info__head">Email:</div>
+              <div class="info__head info__email--lang">Email:</div>
               <div class="info__subtitle">
                 <a
                   class="info__subtitle-link"
@@ -54,7 +66,7 @@
               <img src="../img/contact-phone.svg" alt=" My Phone-number" />
             </div>
             <div class="info contact__info">
-              <div class="info__head">Phone:</div>
+              <div class="info__head info__phone--lang">Phone:</div>
               <div class="info__subtitle">
                 <a class="info__subtitle-link" href="tel:+79152134455"
                   >+7(915)-213-44-55</a
@@ -68,7 +80,10 @@
       </div>
       <!-- /.contact__left -->
       <div class="contact__right">
-        <span class="contact__span anim-item anim--no-effect">Message me</span>
+        <span
+          class="contact__span contact__message--lang anim-item anim--no-effect"
+          >Message me</span
+        >
         <form
           class="form contact__form anim-item anim--no-effect"
           id="form"
@@ -114,6 +129,7 @@
               btn btn-reset btn--secondary
               form__btn
               anim-item anim--no-effect
+              form__btn--lang
             "
             type="submit"
           >

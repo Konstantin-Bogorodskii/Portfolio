@@ -7,6 +7,7 @@
     margin: 0;
     margin-bottom: var(--high-offset);
     padding-bottom: var(--small-offset);
+    width: auto;
 
     &::before {
       width: 21rem;
@@ -23,7 +24,6 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
   }
 
@@ -78,9 +78,12 @@
       margin-bottom: var(--small-md-offset);
     }
 
+    @include md-tablet {
+      text-align: center;
+    }
+
     @include mobile {
       font: var(--middle-font);
-      text-align: center;
     }
   }
 
@@ -105,7 +108,7 @@
     max-width: 100%;
   }
 
-  @include mobile {
+  @include md-tablet {
     display: flex;
     flex-direction: column;
     align-items: center;
