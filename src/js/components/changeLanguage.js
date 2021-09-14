@@ -29,31 +29,31 @@ const langData = {
   },
   hero__btn: {
     en: "View My Projects",
-    ru: "Показать Мои Проекты",
+    ru: "Мои проекты",
   },
   hero__text: {
-    en: "I&rsquo;m a&nbsp;Front-End Developer.",
-    ru: "И я&nbsp;Front-End Разработчик.",
+    en: "I&rsquo;m a&nbsp;Frontend Developer.",
+    ru: "и я - Frontend Разработчик.",
   },
   hero__title: {
     en: "Hello, I&rsquo;m Konstantin Bogorodsky.",
-    ru: "Привет! Я Константин Богородский.",
+    ru: "Привет! Меня зовут Константин Богородский,",
   },
   info__text1: {
     en: "Once tempting world of&nbsp;websites made me&nbsp;curious about Web Development. With time, my&nbsp;interest in&nbsp;programming has grown into a&nbsp;passion of&nbsp;my&nbsp;life. Step by&nbsp;step, research after research I&rsquo;ve immersed myself into coding.",
-    ru: "Однажды пленительный мир веб-сайтов заставил меня заинтересоваться Веб-Разработкой. Со временем интерес к программированию перерос в дело всей моей жизни. Шаг за шагом, исследование за исследованием я погружался в мир веб-разработки.",
+    ru: "Однажды я&nbsp;открыл для себя новый мир&nbsp;&mdash; мир Веб-разработки. Со&nbsp;временем интерес к&nbsp;программированию перерос в&nbsp;хобби, а&nbsp;увлечение в&nbsp;профессию.",
   },
   info__text2: {
     en: "Now, I&rsquo;m devoted to&nbsp;build eye-catching and user-friendly websites &amp;&nbsp;apps. Among the technologies that I&rsquo;ve being working with HTML&nbsp;&amp; CSS, JavaScript (ES6+) and React.",
-    ru: "На данный момент я обладаю навыками создания эффектных и удобных для пользования сайтов и проложений. В своей практике я использую следующие технологии: HTML & CSS, JavaScript и React.",
+    ru: "К&nbsp;данному моменту времени я&nbsp;обладаю всеми необходимыми навыками для создания веб-сайтов с&nbsp;нуля. В&nbsp;своей практике я&nbsp;безусловно использую HTML&nbsp;&amp; CSS, JavaScript(ES6+) и&nbsp;React. Мои личностные качества также играют немаловажную роль в&nbsp;достижении целей проекта, в&nbsp;том числе при выстраивании отношений с&nbsp;клиентами и&nbsp;коллегами.",
   },
   info__text3: {
     en: "I&rsquo;m really into the entire front-end spectrum,so&nbsp;I&nbsp;do my&nbsp;best to&nbsp;be&nbsp;involved in&nbsp;the international high/medium-scale challenging projects by&nbsp;learning English, actively developing my&nbsp;social-media, acquiring programming languages that are spread all other the world.",
-    ru: "Я в действительности заинтересован в полном спектре front-end разработки, поэтому я стараюсь быть вовлеченным в международные проекты высокого/среднего уровней. Для этого я изучаю английский язык, активно веду профессиональные страницы в социальных сетях, развиваю языки программирования популярные во всём мире.",
+    ru: "Мне действительно нравится многогранность Frontend разработки, что даёт возможность постоянно развиваться и&nbsp;профессионально расти.",
   },
   info__btn: {
     en: "Download CV",
-    ru: "Скачать Резюме",
+    ru: "Скачать резюме",
   },
   about__title: {
     en: "About me",
@@ -76,8 +76,8 @@ const langData = {
     ru: "Свяжитесь со мной",
   },
   contact__text: {
-    en: "If&nbsp;you&rsquo;d like to&nbsp;send me&nbsp;a&nbsp;message, I&nbsp;can be&nbsp;reached through various ways! If&nbsp;you prefer email, simply fill out the form or&nbsp;send me&nbsp;a&nbsp;message and I&rsquo;ll get back to&nbsp;you as&nbsp;soon as&nbsp;possible.",
-    ru: "Вы&nbsp;можете связаться со&nbsp;мной заполнив форму обратной связи, которая находиться справа или&nbsp;же отправить сообщение на&nbsp;адрес моей электронной почты. Я&nbsp;вернусь к&nbsp;вам с&nbsp;ответом в&nbsp;кратчайшие сроки. Вы&nbsp;также можете позвонить мне.",
+    en: "If&nbsp;you prefer to&nbsp;send me&nbsp;a&nbsp;message, simply fill out the feedback form or&nbsp;send me&nbsp;an&nbsp;email and I&rsquo;ll get back to&nbsp;you as&nbsp;soon as&nbsp;possible. You can also give me&nbsp;a&nbsp;call.",
+    ru: "Вы&nbsp;можете связаться со&nbsp;мной заполнив форму обратной связи или&nbsp;же отправив сообщение на&nbsp;адрес электронной почты. Я&nbsp;постараюсь вернусь к&nbsp;Вам с&nbsp;ответом в&nbsp;кратчайшие сроки. Я&nbsp;также доступен для общения по&nbsp;номеру телефона, указанному ниже.",
   },
   info__name: {
     en: "Name:",

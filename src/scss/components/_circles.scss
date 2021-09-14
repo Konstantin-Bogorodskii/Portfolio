@@ -1,100 +1,80 @@
-.circle {
-  &__skills {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+.pie-wrapper {
+  position: relative;
+  float: left;
+  margin: 1.5rem;
+  width: 20rem;
+  height: 20rem;
 
-    @include mobile {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  &__skill {
-    margin: 0 var(--second-offset) var(--second-offset) 0;
-    width: 40%;
-    text-align: center;
-
-    @include mobile {
-      margin: 0;
-      margin-bottom: var(--second-offset);
-      width: 100%;
-    }
-  }
-
-  &__name {
-    margin-bottom: 1rem;
-    font: var(--pre-main-font);
-    text-align: center;
+  &:nth-child(2n + 1) {
+    clear: both;
   }
 }
 
-.circle-progress {
-  width: 18rem;
-  height: 18rem;
+.pie-wrapper .pie {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, 1em, 1em, 0.5em);
 }
 
-.circle-progress-value {
-  stroke: var(--color-surf);
-  stroke-linecap: round;
-  stroke-width: 6px;
+.pie-wrapper .pie .half-circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 0.1em solid #3498db;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  clip: rect(0, 0.5em, 1em, 0);
 }
 
-.circle-progress-circle {
-  stroke-width: 6px;
+.pie-wrapper .label {
+  position: absolute;
+  left: 0.4em;
+  right: 0.4em;
+  top: 0.4em;
+  bottom: 0.4em;
+  display: block;
+  border-radius: 50%;
+  font: var(--middle-font);
+  text-align: center;
+  color: #ecf0f1;
+  background: #34495e;
+  cursor: default;
 }
 
-.circle-progress-text {
-  font: var(--roboto-main);
-  fill: var(--color-white);
+.pie-wrapper .label .smaller {
+  padding-bottom: 20px;
+  font: var(--middle-font);
+  color: #bdc3c7;
 }
 
-// .circle__progress .circle__left {
-//   animation: load1 1s linear forwards;
-// }
+.pie-wrapper .shadow {
+  border: 0.1em solid #bdc3c7;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
 
-// .circle__progress:nth-of-type(2) .circle__right,
-// .circle__progress:nth-of-type(3) .circle__right {
-//   animation: load2 0.5s linear forwards 1s;
-// }
+.pie-wrapper.style-2 .label {
+  color: #7f8c8d;
+  background: none;
+}
 
-// .circle__progress:last-of-type .circle__right,
-// .circle__progress:first-of-type .circle__right {
-//   animation: load3 0.8s linear forwards 1s;
-// }
+.pie-wrapper.style-2 .label .smaller {
+  color: #bdc3c7;
+}
 
-// @keyframes load1 {
-//   0% {
-//     transform: rotate(0deg);
-//   }
+.pie-wrapper.progress-30 .pie .right-side {
+  display: none;
+}
 
-//   100% {
-//     transform: rotate(180deg);
-//   }
-// }
+.pie-wrapper.progress-30 .pie .half-circle {
+  border-color: #3498db;
+}
 
-// @keyframes load2 {
-//   0% {
-//     z-index: 100;
-//     transform: rotate(180deg);
-//   }
-
-//   100% {
-//     z-index: 100;
-//     transform: rotate(270deg);
-//   }
-// }
-
-// @keyframes load3 {
-//   0% {
-//     z-index: 100;
-//     transform: rotate(180deg);
-//   }
-
-//   100% {
-//     z-index: 100;
-//     transform: rotate(315deg);
-//   }
-// }
+.pie-wrapper.progress-30 .pie .left-side {
+  transform: rotate(108deg);
+}

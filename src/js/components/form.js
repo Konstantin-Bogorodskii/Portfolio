@@ -54,6 +54,7 @@ function formValidate(form) {
 
   for (let i = 0; i < formReq.length; i++) {
     const input = formReq[i];
+
     formRemoveError(input);
     inputOnChange(input);
 
@@ -94,6 +95,7 @@ function emailTest(input) {
     input.value
   );
 }
+
 function phoneTest(input) {
   return /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(
     input.value
