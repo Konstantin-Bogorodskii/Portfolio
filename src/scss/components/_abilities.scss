@@ -26,7 +26,7 @@
     margin-right: var(--main-offset);
     width: 48%;
 
-    @include md-tablet {
+    @include pre-md-tablet {
       margin-right: 0;
       margin-bottom: var(--second-offset);
       width: 85%;
@@ -40,7 +40,7 @@
   &__soft {
     width: 48%;
 
-    @include md-tablet {
+    @include pre-md-tablet {
       margin-right: 0;
       margin-bottom: var(--second-offset);
       width: 85%;
@@ -56,7 +56,7 @@
     align-items: flex-start;
     justify-content: center;
 
-    @include md-tablet {
+    @include pre-md-tablet {
       flex-direction: column;
       align-items: center;
     }

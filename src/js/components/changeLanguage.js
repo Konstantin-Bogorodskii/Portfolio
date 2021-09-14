@@ -33,19 +33,19 @@ const langData = {
   },
   hero__text: {
     en: "I&rsquo;m a&nbsp;Frontend Developer.",
-    ru: "и я - Frontend Разработчик.",
+    ru: "Я - Frontend Разработчик.",
   },
   hero__title: {
     en: "Hello, I&rsquo;m Konstantin Bogorodsky.",
-    ru: "Привет! Меня зовут Константин Богородский,",
+    ru: "Привет! Меня зовут Константин Богородский.",
   },
   info__text1: {
     en: "Once tempting world of&nbsp;websites made me&nbsp;curious about Web Development. With time, my&nbsp;interest in&nbsp;programming has grown into a&nbsp;passion of&nbsp;my&nbsp;life. Step by&nbsp;step, research after research I&rsquo;ve immersed myself into coding.",
     ru: "Однажды я&nbsp;открыл для себя новый мир&nbsp;&mdash; мир Веб-разработки. Со&nbsp;временем интерес к&nbsp;программированию перерос в&nbsp;хобби, а&nbsp;увлечение в&nbsp;профессию.",
   },
   info__text2: {
-    en: "Now, I&rsquo;m devoted to&nbsp;build eye-catching and user-friendly websites &amp;&nbsp;apps. Among the technologies that I&rsquo;ve being working with HTML&nbsp;&amp; CSS, JavaScript (ES6+) and React.",
-    ru: "К&nbsp;данному моменту времени я&nbsp;обладаю всеми необходимыми навыками для создания веб-сайтов с&nbsp;нуля. В&nbsp;своей практике я&nbsp;безусловно использую HTML&nbsp;&amp; CSS, JavaScript(ES6+) и&nbsp;React. Мои личностные качества также играют немаловажную роль в&nbsp;достижении целей проекта, в&nbsp;том числе при выстраивании отношений с&nbsp;клиентами и&nbsp;коллегами.",
+    en: "Now, I&rsquo;m devoted to&nbsp;build eye-catching and user-friendly websites. Among the technologies that I&rsquo;ve being working with HTML&nbsp;&amp; CSS, JavaScript (ES6+) and React.",
+    ru: "К&nbsp;данному моменту времени я&nbsp;обладаю всеми необходимыми навыками для создания веб-сайтов с&nbsp;нуля. В&nbsp;своей практике я&nbsp;безусловно использую HTML&nbsp;&amp; CSS, JavaScript(ES6+) и&nbsp;React. Мои личностные качества также играют немаловажную роль в&nbsp;достижении целей проекта.",
   },
   info__text3: {
     en: "I&rsquo;m really into the entire front-end spectrum,so&nbsp;I&nbsp;do my&nbsp;best to&nbsp;be&nbsp;involved in&nbsp;the international high/medium-scale challenging projects by&nbsp;learning English, actively developing my&nbsp;social-media, acquiring programming languages that are spread all other the world.",
