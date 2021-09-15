@@ -107,3 +107,22 @@ function inputOnChange(input) {
     formRemoveError(input);
   });
 }
+
+const contactSection = document.querySelector(".contact");
+
+window.document.body.ontouchstart = (e) => {
+  if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") {
+    if (
+      e.target.classList.contains("form__input") ||
+      e.target.classList.contains("form__textarea")
+    ) {
+      contactSection.style.padding = "15rem 0 26rem 0";
+      e.preventDefault();
+      e.target.focus();
+    }
+  }
+
+  // if (document.hasFocus()) {
+  //   contactSection.style.padding = "15rem 0";
+  // }
+};

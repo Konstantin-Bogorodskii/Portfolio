@@ -111,6 +111,22 @@ const langData = {
     en: "Send",
     ru: "Отправить",
   },
+  circle__name1: {
+    en: "Critical Thinking",
+    ru: "Критическое мышление",
+  },
+  circle__name2: {
+    en: "Teamwork",
+    ru: "Работа в команде",
+  },
+  circle__name3: {
+    en: "Communication",
+    ru: "Коммуникативные навыки",
+  },
+  circle__name4: {
+    en: "Creativity ",
+    ru: "Творческие способности",
+  },
 };
 
 languages.forEach((lang) => {

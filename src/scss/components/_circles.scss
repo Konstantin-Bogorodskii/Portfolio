@@ -8,10 +8,10 @@
 .circle__progress {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin: var(--small-md-offset);
   border-radius: 50%;
   width: 20rem;
   height: 20rem;
@@ -19,10 +19,19 @@
   text-align: center;
   color: var(--color-white);
   background: var(--color-main);
+
+  &-wrap {
+    margin-bottom: var(--small-md-offset);
+  }
 }
 
-.circle__progress::after {
-  content: "%";
+.circle__name {
+  margin: 0;
+  margin-bottom: var(--small-offset);
+  max-width: 20rem;
+  font-size: 1.9rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .circle__progress .circle__title {
