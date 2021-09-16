@@ -116,13 +116,11 @@ window.document.body.ontouchstart = (e) => {
       e.target.classList.contains("form__input") ||
       e.target.classList.contains("form__textarea")
     ) {
-      contactSection.style.padding = "15rem 0 26rem 0";
+      contactSection.style.padding = "15rem 0 28rem 0";
       e.preventDefault();
       e.target.focus();
     }
+  } else {
+    contactSection.style.padding = "15rem 0";
   }
-
-  // if (document.hasFocus()) {
-  //   contactSection.style.padding = "15rem 0";
-  // }
 };
