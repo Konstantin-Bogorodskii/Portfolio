@@ -60,9 +60,20 @@
   &__link {
     transition: all 0.3s ease-in-out;
 
+    &:hover,
+    &:focus {
+      color: var(--color-pink);
+    }
+
     &.filter__current {
       border-bottom: 2px solid currentColor;
       color: var(--color-pink);
+
+      &:focus,
+      &:hover {
+        border-bottom: 2px solid currentColor;
+        color: var(--color-pink);
+      }
     }
   }
 }
