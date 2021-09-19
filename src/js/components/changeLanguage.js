@@ -44,7 +44,7 @@ const langData = {
     ru: "Однажды я&nbsp;открыл для себя новый мир&nbsp;&mdash; мир Веб-разработки. Со&nbsp;временем интерес к&nbsp;программированию перерос в&nbsp;хобби, а&nbsp;увлечение в&nbsp;профессию.",
   },
   info__text2: {
-    en: "Now, I&rsquo;m devoted to&nbsp;build eye-catching and user-friendly websites. Among the technologies that I&rsquo;ve being working with HTML&nbsp;&amp; CSS, JavaScript (ES6+) and React.",
+    en: "Now, I&rsquo;m devoted to&nbsp;build eye-catching and user-friendly websites. Among the technologies that I&rsquo;ve being working with are HTML&nbsp;&amp; CSS, JavaScript (ES6+) and React.",
     ru: "К&nbsp;данному моменту времени я&nbsp;обладаю всеми необходимыми навыками для создания веб-сайтов с&nbsp;нуля. В&nbsp;своей практике я&nbsp;безусловно использую HTML&nbsp;&amp; CSS, JavaScript(ES6+) и&nbsp;React. Мои личностные качества также играют немаловажную роль в&nbsp;достижении целей проекта.",
   },
   info__text3: {
@@ -124,8 +124,88 @@ const langData = {
     ru: "Коммуникативные навыки",
   },
   circle__name4: {
-    en: "Creativity ",
-    ru: "Творческие способности",
+    en: "Problem Solving",
+    ru: "Решение задач",
+  },
+  gallery__span3: {
+    en: "Calculator",
+    ru: "Калькулятор",
+  },
+  gallery__span4: {
+    en: "Aim Training",
+    ru: "Попади в цель",
+  },
+  gallery__span8: {
+    en: "Tic Tac Toe",
+    ru: "Крестики-нолики",
+  },
+  gallery__span9: {
+    en: "My Posts",
+    ru: "Мои посты",
+  },
+  gallery__span11: {
+    en: "Racing Game",
+    ru: "Гонки",
+  },
+  gallery__span12: {
+    en: "To&nbsp;Do&nbsp;List ",
+    ru: "Список задач",
+  },
+  filter__link3: {
+    en: "Apps & Games",
+    ru: "Приложения и игры",
+  },
+  filter__link2: {
+    en: "Websites ",
+    ru: "Веб-сайты",
+  },
+  gallery__hidden1: {
+    en: "An&nbsp;adaptive Website with modal window, slider and an&nbsp;opportunity to&nbsp;fill in&nbsp;the feedback form.",
+    ru: "Адаптвиный под все устройства сайт с&nbsp;модальный окном, слайдером и&nbsp;возможностью заполнить форму обратной связи.",
+  },
+  gallery__hidden2: {
+    en: "Website with an&nbsp;opportunity to&nbsp;add and delete products&nbsp;to (from) cart",
+    ru: "Cайт с&nbsp;возможностью добавления и&nbsp;удаления товаров&nbsp;в (из) корзину(ы).",
+  },
+  gallery__hidden3: {
+    en: "This calculator allows to&nbsp;perform all basic calculations",
+    ru: "Данный калькулятор позволяет провести стандартные вычислительные  операции.",
+  },
+  gallery__hidden4: {
+    en: "This game is&nbsp;specifically designed to&nbsp;improve mouse accuracy, reaction and quickness.",
+    ru: "Данное игра позволяет проверить вашу точность, реакцию и скорость клика по цели.",
+  },
+  gallery__hidden5: {
+    en: "One of&nbsp;my&nbsp;first projects ever. One page Website built with HTML&nbsp;&amp; CSS.",
+    ru: "Один из первых тренировочных проектов. Одностраничный сайт с использованием HTML & CSS.",
+  },
+  gallery__hidden6: {
+    en: "Multifunctional Webpage with an&nbsp;administrator&rsquo;s panel on&nbsp;the right and user&rsquo;s panel on&nbsp;the left.",
+    ru: "Мультифункциональная веб-страница с&nbsp;панелью администратора справа и&nbsp;панелью пользователя слева.",
+  },
+  gallery__hidden7: {
+    en: "One of&nbsp;my&nbsp;first projects ever. One page Website built with HTML&nbsp;&amp; CSS.",
+    ru: "Один из первых тренировочных проектов. Одностраничный сайт с использованием HTML & CSS.",
+  },
+  gallery__hidden8: {
+    en: "Well known game with main goal to&nbsp;place 3&nbsp;of&nbsp;your marks in&nbsp;a&nbsp;row.",
+    ru: "Известная игра, главная цель которой разместить 3&nbsp;одинаковые фигуры в&nbsp;ряд.",
+  },
+  gallery__hidden9: {
+    en: "Pet project for practicing programming using the React.",
+    ru: "Тренировочное упражнение по&nbsp;отработке навыков программирования на&nbsp;React.",
+  },
+  gallery__hidden10: {
+    en: "The Website is&nbsp;devoted to&nbsp;travelling. It&nbsp;allows users to&nbsp;calculate the cost of&nbsp;a&nbsp;tour as&nbsp;well as&nbsp;shows special offer count down.",
+    ru: "Сайт, посвященный travel тематике, который позволяет пользователю рассчитать стоимость тура, а&nbsp;также показывает обратный отсчет акции.",
+  },
+  gallery__hidden11: {
+    en: "An&nbsp;exciting game to&nbsp;drive a&nbsp;car on&nbsp;a&nbsp;straight road in&nbsp;one direction at&nbsp;a&nbsp;constant speed avoiding obstacles.",
+    ru: "Увлекательная игра, в&nbsp;которой нужно вести машину по&nbsp;прямой дороге в&nbsp;одном направлении с&nbsp;постоянной скоростью избегая препятствия.",
+  },
+  gallery__hidden12: {
+    en: "Simple App to&nbsp;list all your tasks. Delete mission after completion.",
+    ru: "Простое приложение с&nbsp;возможностью добавлять и&nbsp;удалять задачи.",
   },
 };
 
@@ -159,11 +239,3 @@ function changeLanguage() {
 }
 
 changeLanguage();
-
-// languages.forEach((lang) => {
-//   let langValue = lang.dataset.lang;
-
-//   if (langValue === hash) {
-//     lang.classList.add("nav__img--active");
-//   }
-// });

@@ -120,7 +120,5 @@ window.document.body.ontouchstart = (e) => {
       e.preventDefault();
       e.target.focus();
     }
-  } else {
-    contactSection.style.padding = "15rem 0";
   }
 };

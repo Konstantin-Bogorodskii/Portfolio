@@ -171,33 +171,49 @@
 }
 
 .progress.progress__html .progress__line::after {
-  content: "93%";
+  content: "85%";
 }
 
 .progress.progress__css .progress__line::after {
-  content: "85%";
+  content: "80%";
 }
 
 .progress.progress__js .progress__line::after {
-  content: "85%";
+  content: "80%";
 }
 
 .progress.progress__react .progress__line::after {
-  content: "65%";
+  content: "60%";
+}
+
+.progress.progress__sass .progress__line::after {
+  content: "70%";
+}
+
+.progress.progress__git .progress__line::after {
+  content: "55%";
 }
 
 .progress.progress__html .progress__line {
-  width: 93%;
+  width: 85%;
 }
 
 .progress.progress__css .progress__line {
-  width: 85%;
+  width: 75%;
 }
 
 .progress.progress__js .progress__line {
-  width: 85%;
+  width: 75%;
 }
 
 .progress.progress__react .progress__line {
-  width: 65%;
+  width: 60%;
+}
+
+.progress.progress__sass .progress__line {
+  width: 70%;
+}
+
+.progress.progress__git .progress__line {
+  width: 55%;
 }
