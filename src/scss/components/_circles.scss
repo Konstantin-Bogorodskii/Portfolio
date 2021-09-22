@@ -88,35 +88,31 @@
 }
 
 .circle__svg circle:nth-child(2) {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
+  stroke-dasharray: 600px;
+  stroke-dashoffset: 600px;
 }
 
 .circle__card .circle__svg circle:nth-child(2) {
-  stroke-dashoffset: 600;
-  transition: stroke-dashoffset 1.5s linear;
+  stroke: var(--color-surf);
+  transition: stroke-dashoffset 1.2s linear;
 }
 
 .circle__card:nth-child(1).anim--active .circle__svg circle:nth-child(2) {
-  stroke: var(--color-surf);
-  stroke-dashoffset: calc(600 - (600 * 80) / 100);
-  transition: stroke-dashoffset 1.5s linear 0.1s;
+  stroke-dashoffset: calc(600px - (600px * 80) / 100);
+  transition: stroke-dashoffset 1.2s linear 0.1s;
 }
 
 .circle__card:nth-child(2).anim--active .circle__svg circle:nth-child(2) {
-  stroke: var(--color-surf);
-  stroke-dashoffset: calc(600 - (600 * 85) / 100);
-  transition: stroke-dashoffset 1.5s linear 0.3s;
+  stroke-dashoffset: calc(600px - (600px * 85) / 100);
+  transition: stroke-dashoffset 1.2s linear 0.2s;
 }
 
 .circle__card:nth-child(3).anim--active .circle__svg circle:nth-child(2) {
-  stroke: var(--color-surf);
-  stroke-dashoffset: calc(600 - (600 * 75) / 100);
-  transition: stroke-dashoffset 1.5s linear 0.5s;
+  stroke-dashoffset: calc(600px - (600px * 75) / 100);
+  transition: stroke-dashoffset 1.2s linear 0.3s;
 }
 
 .circle__card:nth-child(4).anim--active .circle__svg circle:nth-child(2) {
-  stroke: var(--color-surf);
-  stroke-dashoffset: calc(600 - (600 * 65) / 100);
-  transition: stroke-dashoffset 1.5s linear 0.7s;
+  stroke-dashoffset: calc(600px - (600px * 65) / 100);
+  transition: stroke-dashoffset 1.2s linear 0.4s;
 }
