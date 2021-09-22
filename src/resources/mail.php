@@ -35,7 +35,7 @@ try {
     $mail->Password   = 'JirWOW19IWNLswag06'; // Пароль на почте // Пароль приложения c пробелами
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('konstantin.bogorodsky.phpmailer@gmail.com', 'Константин Боогродский'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('konstantin.bogorodsky.phpmailer@gmail.com', 'Константин Богородский'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('konstantin.bogorodsky@gmail.com');  
