@@ -9,7 +9,6 @@ burger.addEventListener("click", (e) => {
 const navList = document.querySelector(".nav__list");
 navList.addEventListener("click", (e) => {
   const target = e.target;
-  console.log(navList);
   if (
     target.classList.contains("nav__link") &&
     navList.classList.contains("nav__list--active")

@@ -117,7 +117,6 @@ window.document.body.ontouchstart = (e) => {
       e.target.classList.contains("form__textarea")
     ) {
       contactSection.style.padding = "15rem 0 28rem 0";
-      e.preventDefault();
       e.target.focus();
     }
   }

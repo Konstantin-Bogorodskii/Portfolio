@@ -76,6 +76,10 @@
   padding: 2.5rem 3rem;
   box-shadow: inset 0 0 7px #08fdd8;
   background-color: var(--color-main);
+
+  @include small-tablet {
+    padding: 2.5rem 2rem;
+  }
 }
 
 .skill {
@@ -120,12 +124,6 @@
   transform-origin: left;
   transition: all 0.8s ease 0s;
 
-  &.anim--active {
-    transform: scaleX(1);
-    transform-origin: left;
-    transition: all 0.8s ease 0.3s;
-  }
-
   &__line {
     position: absolute;
     border-top-right-radius: 0.5rem;
@@ -167,6 +165,12 @@
       transform-origin: left;
       transition: all 0.8s ease 0.3s;
     }
+  }
+
+  &.anim--active {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: all 0.8s ease 0.3s;
   }
 }
 

@@ -225,10 +225,6 @@
         visibility: visible;
       }
     }
-
-    @include mobile {
-      height: 300px;
-    }
   }
 
   &__title {
