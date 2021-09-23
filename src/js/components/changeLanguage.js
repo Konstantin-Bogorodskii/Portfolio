@@ -2,7 +2,7 @@ const languages = document.querySelectorAll(".nav__img");
 const documentTitle = document.querySelector("title");
 const allLanguages = ["ru", "en"];
 const docTitleLang = {
-  en: "Bogorodsky Konstantin Front-End Developer",
+  en: "Bogorodskii Konstantin Front-End Developer",
   ru: "Богородский Константин Front-End Разработчик",
 };
 
@@ -36,7 +36,7 @@ const langData = {
     ru: "Я - Frontend Разработчик.",
   },
   hero__title: {
-    en: "Hello, I&rsquo;m Konstantin Bogorodsky.",
+    en: "Hello, I&rsquo;m Konstantin Bogorodskii.",
     ru: "Привет! Меня зовут Константин Богородский.",
   },
   info__text1: {
@@ -84,7 +84,7 @@ const langData = {
     ru: "Имя:",
   },
   info__fullname: {
-    en: "Konstantin Bogorodsky",
+    en: "Konstantin Bogorodskii",
     ru: "Константин Богородский",
   },
   info__address: {
