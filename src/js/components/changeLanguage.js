@@ -159,6 +159,10 @@ const langData = {
     en: "Websites ",
     ru: "Веб-сайты",
   },
+  gallery__hidden0: {
+    en: "Tesla clone built with React, React-Router, Firebase for authentication, Redux for state management, and Material-UI.",
+    ru: "Tesla клон, созданный с помощью React, React-Router, Firebase для аутентификации, Redux для управления состоянием и Material-UI.",
+  },
   gallery__hidden1: {
     en: "An&nbsp;adaptive Website with modal window, slider and an&nbsp;opportunity to&nbsp;fill in&nbsp;the feedback form.",
     ru: "Адаптвиный под все устройства сайт с&nbsp;модальный окном, слайдером и&nbsp;возможностью заполнить форму обратной связи.",
@@ -177,7 +181,7 @@ const langData = {
   },
   gallery__hidden5: {
     en: "One of&nbsp;my&nbsp;first projects ever. One page Website built with HTML&nbsp;&amp; CSS.",
-    ru: "Один из первых тренировочных проектов. Одностраничный сайт с использованием HTML & CSS.",
+    ru: "Один из первых тренировочных проектов. Одностраничный сайт, созданный с помощью HTML & CSS.",
   },
   gallery__hidden6: {
     en: "Multifunctional Webpage with an&nbsp;administrator&rsquo;s panel on&nbsp;the right and user&rsquo;s panel on&nbsp;the left.",
@@ -185,7 +189,7 @@ const langData = {
   },
   gallery__hidden7: {
     en: "One of&nbsp;my&nbsp;first projects ever. One page Website built with HTML&nbsp;&amp; CSS.",
-    ru: "Один из первых тренировочных проектов. Одностраничный сайт с использованием HTML & CSS.",
+    ru: "Один из первых тренировочных проектов. Одностраничный сайт, созданный с помощью HTML & CSS.",
   },
   gallery__hidden8: {
     en: "Well known game with main goal to&nbsp;place 3&nbsp;of&nbsp;your marks in&nbsp;a&nbsp;row.",
@@ -206,6 +210,10 @@ const langData = {
   gallery__hidden12: {
     en: "Simple App to&nbsp;list all your tasks. Delete mission after completion.",
     ru: "Простое приложение с&nbsp;возможностью добавлять и&nbsp;удалять задачи.",
+  },
+  gallery__hidden13: {
+    en: "A&nbsp;responsive one page Website built with HTML&nbsp;&amp; CSS &amp;&nbsp;JS.",
+    ru: "Адаптивный под все устройства одностраничный сайт, созданный с&nbsp;помощью HTML&nbsp;&amp; CSS &amp;&nbsp;JS.",
   },
 };
 
